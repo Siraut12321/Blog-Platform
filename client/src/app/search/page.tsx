@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Search as SearchIcon } from 'lucide-react';
 import { Post } from '@/types';
@@ -10,6 +10,14 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="container mx-auto px-4 py-8 max-w-4xl"><p className="text-muted-foreground">Loading...</p></div>}>
+      <SearchContent />
+    </Suspense>
+  );
+}
+
+function SearchContent() {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(searchParams.get('q') || '');
   const [posts, setPosts] = useState<Post[]>([]);
