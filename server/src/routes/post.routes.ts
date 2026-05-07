@@ -13,10 +13,9 @@ router.get('/', getPosts);
 router.get('/trending', getTrendingPosts);
 router.get('/my-posts', authenticate, authorize('author'), getMyPosts);
 router.get('/bookmarks', authenticate, getBookmarks);
-router.get('/:slug', getPostBySlug);
-
 router.post('/upload-image', authenticate, authorize('author'), upload.single('image'), uploadImage);
 router.post('/', authenticate, authorize('author'), createPost);
+router.get('/:slug', getPostBySlug);
 router.patch('/:id', authenticate, authorize('author'), updatePost);
 router.delete('/:id', authenticate, authorize('author'), deletePost);
 router.post('/:id/like', authenticate, toggleLike);
