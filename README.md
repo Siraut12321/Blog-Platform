@@ -1,5 +1,16 @@
 # ✍️ Inkwell — Full-Stack Blog Platform
 
+<div align="center">
+
+### 🌐 [Live Demo → blog-platform-z8xo.vercel.app](https://blog-platform-z8xo.vercel.app/)
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://blog-platform-z8xo.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Siraut12321/Blog-Platform)
+
+</div>
+
+---
+
 A production-ready blogging platform built with **Next.js 15**, **Express**, **MongoDB**, and **TypeScript**. Features a rich text editor, image uploads via Cloudinary, JWT authentication, and a clean responsive UI.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
@@ -7,6 +18,7 @@ A production-ready blogging platform built with **Next.js 15**, **Express**, **M
 ![MongoDB](https://img.shields.io/badge/MongoDB-8-green?logo=mongodb)
 ![Express](https://img.shields.io/badge/Express-4-lightgrey?logo=express)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?logo=tailwindcss)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
 
 ---
 
